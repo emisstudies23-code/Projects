@@ -1,3 +1,9 @@
+//test comment
+//test successfull
+//test started to verify the functionality of GitDesktop
+//changes about the file should be visible on the GitHistory/GitDesktop
+
+
 class Animal {
     constructor(color = 'yellow', energy = 100) {
         this.color = color;

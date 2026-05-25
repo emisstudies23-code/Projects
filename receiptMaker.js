@@ -6,6 +6,11 @@ const dishData = [
     { name: "Vegetarian Pizza", price: 6.45 },
 ];
 
+//test comment
+//test successfull
+//test started to verify the functionality of GitDesktop
+//changes about the file should be visible on the GitHistory/GitDesktop
+
 // Tax Value
 const tax = 1.20;
 

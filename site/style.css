@@ -1,0 +1,159 @@
+/* --- GLOBAL RESET & TROPICAL VARIABLES --- */
+:root {
+    --tropical-green: #2C5E4E;
+    --leaf-green: #4A7C59;
+    --warm-coral: #E76F51;
+    --sand-light: #F4F1DE;
+    --sand-dark: #E0DDC5;
+    --text-dark: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--sand-light);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- HEADER --- */
+.site-header {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--tropical-green);
+}
+
+.main-logo {
+    max-height: 120px;
+    width: auto;
+}
+
+/* --- NAVIGATION --- */
+.site-nav {
+    background-color: var(--tropical-green);
+    padding: 15px 0;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+    color: var(--warm-coral);
+}
+
+/* --- PROMOTION AREA --- */
+.promotion {
+    background: linear-gradient(135deg, var(--leaf-green), var(--tropical-green));
+    color: #FFFFFF;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    border: 4px solid var(--warm-coral);
+}
+
+.promotion h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* --- INFO BLOCKS (3 COLUMNS) --- */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+.info-card {
+    background-color: #FFFFFF;
+    flex: 1;
+    padding: 30px 20px;
+    text-align: center;
+    border: 2px solid var(--sand-dark);
+    border-radius: 8px;
+}
+
+.icon-placeholder {
+    width: 60px;
+    height: 60px;
+    background-color: var(--sand-dark);
+    color: var(--tropical-green);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    color: var(--tropical-green);
+    margin-bottom: 10px;
+}
+
+.info-card hr {
+    width: 50%;
+    margin: 0 auto 15px auto;
+    border: 1px solid var(--warm-coral);
+}
+
+/* --- FOOTER --- */
+.site-footer {
+    background-color: var(--tropical-green);
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    border-top: 4px solid var(--warm-coral);
+}
+
+.small-logo {
+    max-height: 50px;
+    /* Adding a white background/padding if your logo requires it to pop against dark green */
+    background-color: white; 
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+    }
+    .site-nav ul {
+        gap: 15px;
+    }
+    .site-footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
